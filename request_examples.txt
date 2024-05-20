@@ -1,0 +1,31 @@
+EXEMPLO DE BODY JSON PARA REQUISIÇÃO DE ELABORAÇÃO DE PLANO DE TREINO:
+
+    elaboraPlano_requestBody = {
+        'tipo_request': 'ELABORA_PLANO',
+        'dados': {
+            'tipo_corpo': 'ECTOMORFO',
+            'altura': '181cm',
+            'peso': '72.5kg',
+            'dores': 'Dor leve no pulso direito ao praticar flexão de punho',
+            'objetivo': 'Definir parte superior do corpo e hipertrofiar pernas e glúteos',
+            'dias_semana': 5,
+            'sexo': 'Masculino'
+        },
+    }
+
+EXEMPLO DE BODY JSON PARA REQUISIÇÃO DE EXERCICIOS DE ACORDO COM O PLANO DE TREINO:
+
+elaboraTreino_requestBody = {
+    'tipo_request': 'ELABORA_TREINO',
+    'dados': {
+        'grupos': 'Peito, Tríceps, Ombro',
+        'dados_usuario': {
+            'tipo_corpo': 'ECTOMORFO',
+            'altura': '181cm',
+            'peso': '72.5kg',
+            'dores': 'Dor leve no pulso direito ao praticar flexão de punho',
+            'objetivo': 'Definir parte superior do corpo e hipertrofiar pernas e glúteos',
+            'sexo': 'Masculino'
+        }
+    }
+}
